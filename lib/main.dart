@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:maze/hi.dart';
 
 void main() {
   runApp(const MainApp());
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,  ]);
+
 }
 
 class MainApp extends StatelessWidget {
