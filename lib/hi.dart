@@ -6,8 +6,12 @@ const List<Color> colorPalette = [
   Color(0xff7209b7), // Purple
   Color(0xff3a0ca3), // Indigo
   Color(0xff4361ee), // Blue
-  Color(0xff4cc9f0), // Light Blue
+  Color(0xff4cc9f0), 
+  Color(0xfff3722c), // Orange
+  Color.fromARGB(255, 187, 243, 44), // Orange
+
 ];
+const Color backgroundColor = Color.fromARGB(255, 26, 28, 29); // Dark background
 // The two possible angles for our slashes
 const double FORWARD_SLASH_ANGLE = pi / 4; // 45 degrees
 const double BACKWARD_SLASH_ANGLE = 3 * pi / 4; // 135 degrees
@@ -168,7 +172,7 @@ class _Animated10PrintState extends State<Animated10Print>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xff1a1a1a),
+      backgroundColor: backgroundColor,
       // --- NEW: Wrap the AnimatedBuilder with a GestureDetector ---
       body: GestureDetector(
         // When the user starts or moves their finger
